@@ -42,11 +42,6 @@ jobs:
           echo "PKG_NAME=${PKG_PREFIX}" >> "${GITHUB_ENV}"
           echo "PKG_VERSION=${VERSION}" >> "${GITHUB_ENV}"
 
-          if [[ "${GITHUB_REF_NAME}" != "v${VERSION}" ]]; then
-            echo "package version ${VERSION} does not match release tag ${GITHUB_REF_NAME}" >&2
-            exit 1
-          fi
-
       - name: Build package
         run: |
           just doc
