@@ -1,6 +1,7 @@
 name: Package and push to registry repo
 on:
   push:
+    branches: [ main ]
     tags: [ v* ]
 
 env:
