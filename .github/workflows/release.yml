@@ -1,7 +1,8 @@
 name: Package and push to registry repo
 on:
   push:
-    tags: [ v* ]
+    branch: [ main ]
+    # tags: [ v* ]
 
 env:
   # the repository to which to push the release version
