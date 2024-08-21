@@ -1,3 +1,5 @@
+#import "@preview/vienna-tech:0.1.0": *
+
 = Bachelorarbeit
 Nach der Einleitung kommt der weitere Text:  #lorem(22)
 
@@ -107,13 +109,10 @@ sowie innen der Titel der Arbeit
 (bei geraden Seiten rechts und bei ungeraden Seiten links).
 Dies erfolgt in Konfiguration automatisch.
 
-== Code
+== Verwendeter Code
 
-Um in der Arbeit Code darzustellen eignet sich eine `#figure` Funktion, wobei der Code in eine `#box` eingebettet sein sollte.
-#v(0.5cm)
-#figure(
-  box(align(left,
-```python
+Um in der Arbeit Code darzustellen eignet sich die `#codecell`-Funktion.
+#codecell(```python
 # Plotting a Sinus Curve 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -126,4 +125,4 @@ y = np.sin(x)
 fig, ax = plt.subplots()
 ax.plot(x,y)
 plt.show()
-```), stroke: 0.7pt , fill: rgb("#eee"), outset: 5pt, radius: 7pt, width: 75%))
+```)

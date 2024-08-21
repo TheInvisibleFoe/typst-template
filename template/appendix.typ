@@ -1,3 +1,5 @@
+#import "@preview/vienna-tech:0.1.0": *
+
 Ein möglicher Anhang sollte direkt nach dem Literaturverzeichnis ohne 
 Seitenumbruch angeführt werden.
 Jede Anhangüberschrift wird wie eine normale Überschrift eingeleitet, jedoch gibt es keine Nummerierung.
@@ -10,9 +12,9 @@ Es empfiehlt sich den Anhang bzw. alle Kapitel in einer eigenen Datei zu schreib
 Generell stellt sich für uns das Problem, nun mit Typst einfach und rasch eine wissenschaftliche Arbeit zu schreiben.
 Den Inhalt nimmt uns Typst leider nicht ab, dafür sind wir selbst verantwortlich.
 Jedoch können wir uns bei Typst auf einige Vorteile verlassen, die wir hier näher betrachten möchten.
-Vorweg sei die konsistente Formatierung genannt.
+Vorweg sei die konsistente Formatierung genannt, die kurz Kompilationsdauer und die äußerst intuitive Bedienung.
 
-Bevor wir diese Vorteile behandeln, beschäftigen wir uns mit generellen Anforderungen an wissenschaftliche Arbeiten.
+Weiters wollen wir uns mit generellen Anforderungen an wissenschaftliche Arbeiten beschäftigen.
 Die Erstellung der Gliederung und des Aufbaus einer wissenschaftlichen Arbeit sind meist der erste Schritt für jede Autorin bzw. jeden Autor.
 Danach beschäftigt uns der Inhalt, denn jeder dieser Punkte bei der Gliederung will auch mit sinnvollem Inhalt gefüllt sein.
 Ausreichendes Datenmaterial (Zahlen, Daten, Fakten) sollte dann gesammelt werden oder sein.

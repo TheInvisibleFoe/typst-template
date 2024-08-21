@@ -8,7 +8,7 @@
 
 // Set Fonts
 #let main-font = ("CMU Serif","New Computer Modern")
-#let title-font = ("CMU Sans Serif", "PT Sans")
+#let title-font = ("CMU Sans Serif", "PT Sans", "DejaVu Sans")
 #let raw-font = ("DejaVu Sans Mono")
 
 // Workaround for the lack of `std` scope
@@ -285,4 +285,22 @@
   counter(heading).update(0)
   appendix
   }
+}
+
+#let codecell(
+  doc, 
+  // Vertical shift (space before cell)
+  vertical:1em
+) = {
+  if vertical != none {
+    v(vertical)
+  }
+  figure(
+    box(
+      align(left,doc),
+      stroke: 0.7pt , 
+      fill: rgb("#eee"), 
+      outset: 5pt, 
+      radius: 7pt, 
+      width: 75%))
 }
