@@ -1,4 +1,4 @@
-#import "../src/lib.typ": *
+#import "@preview/vienna-tech:0.1.0": *
 
 // Useing the configuration
 #show: tuw-thesis.with(

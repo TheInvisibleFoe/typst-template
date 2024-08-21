@@ -1,5 +1,22 @@
 #import "@preview/vienna-tech:0.1.0": *
 
+// Fancy Representation for LaTeX and Typst
+#let typst  = {
+  text(font: "Linux Libertine", weight: "semibold", fill: eastern)[typst]
+}
+#let latex = {
+    set text(font: "New Computer Modern")
+    box(width: 2.55em, {
+      [L]
+      place(top, dx: 0.3em, text(size: 0.7em)[A])
+      place(top, dx: 0.7em)[T]
+      place(top, dx: 1.26em, dy: 0.22em)[E]
+      place(top, dx: 1.8em)[X]
+    })
+}
+#show "Typst": typst
+#show "LaTeX": latex
+
 // Useing the configuration
 #show: tuw-thesis.with(
   title: [Instruktionen zur Abfassung der Bachelorarbeit],
@@ -18,22 +35,6 @@
   appendix: include "appendix.typ", 
     )
 
-// Fancy Representation for LaTeX and Typst
-#let typst  = {
-  text(font: "Linux Libertine", weight: "semibold", fill: eastern)[typst]
-}
-#let latex = {
-    set text(font: "New Computer Modern")
-    box(width: 2.55em, {
-      [L]
-      place(top, dx: 0.3em, text(size: 0.7em)[A])
-      place(top, dx: 0.7em)[T]
-      place(top, dx: 1.26em, dy: 0.22em)[E]
-      place(top, dx: 1.8em)[X]
-    })
-}
-#show "Typst": typst
-#show "LaTeX": latex
 
 // Main Content
 = Einleitung

@@ -1,3 +1,5 @@
+#set shell := ["bash", "-c"]
+
 root := justfile_directory()
 
 export TYPST_ROOT := root
