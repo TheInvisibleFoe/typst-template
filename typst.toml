@@ -9,7 +9,7 @@ license = "Unlicense"
 description = "An unofficial template for writing thesis at the TU Wien civil- and environmental engineering faculty."
 repository = "https://github.com/npikall/vienna-tech.git"
 keywords = ["thesis", "tuw", "TU Wien", "civil engineering", "environmental engineering"]
-categories = ["thesis", "education"]
+categories = ["thesis"]
 exclude = [
 	".github",
 	"docs",
