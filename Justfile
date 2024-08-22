@@ -37,4 +37,4 @@ uninstall: (remove "@local")
 uninstall-preview: (remove "@preview")
 
 # run ci suite
-ci: test doc
+ci: test 
