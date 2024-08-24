@@ -1,7 +1,8 @@
 # The `vienna-tech` Template
-<div align="center">Version 0.1.0</div>
+<div align="center">Version 0.1.1</div>
 
-This is a template, modeled after the LaTeX template provided by the Vienna University of Technology for Engineering Students. It is intended to be used as a starting point for writing Bachelor's or Master's theses, but can be adapted for other purposes as well. It shall be noted that this template is not an official template provided by the Vienna University of Technology, but rather a personal effort to provide a similar template in a new typesetting system.
+This is a template, modeled after the LaTeX template provided by the Vienna University of Technology for Engineering Students. It is intended to be used as a starting point for writing Bachelor's or Master's theses, but can be adapted for other purposes as well. It shall be noted that this template is not an official template provided by the Vienna University of Technology, but rather a personal effort to provide a similar template in a new typesetting system. If you want to checkout the original templates visit the website of [TU Wien](https://www.tuwien.at/cee/edvlabor/lehre/vorlagen) 
+
 
 <img src="thumbnail-long.png" alt="isolated" height="400px"/>
 
@@ -11,7 +12,7 @@ This is a template, modeled after the LaTeX template provided by the Vienna Univ
 These instructions will help you set up the template on the typst web app. 
 
 ```typ
-#import "@preview/vienna-tech:0.1.0": *
+#import "@preview/vienna-tech:0.1.1": *
 
 // Useing the configuration
 #show: tuw-thesis.with(
@@ -37,7 +38,7 @@ These instructions will help you set up the template on the typst web app.
 These instructions will get you a copy of the project up and running on the typst web app. 
 
 ```bash
-typst init @preview/vienna-tech:0.1.0
+typst init @preview/vienna-tech:0.1.1
 ```
 
 ### Template overview

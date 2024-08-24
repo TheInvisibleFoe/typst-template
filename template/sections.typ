@@ -1,4 +1,4 @@
-#import "@preview/vienna-tech:0.1.0": *
+#import "@preview/vienna-tech:0.1.1": *
 
 = Bachelorarbeit
 Nach der Einleitung kommt der weitere Text:  #lorem(22)

@@ -35,6 +35,8 @@
   lang: "de",
   //The appendix
   appendix: none,
+  // The TOC
+  toc: true,
   // The document's body
   body
 ) = {
@@ -246,11 +248,12 @@
 
 
   // Display the table of contents.
-  if lang == "de" {
-    outline(title: [Inhaltsverzeichnis], indent: auto)
-  } else {
-      outline(title: [Table of Contents], indent: auto)
-
+  if toc == true { 
+    if lang == "de"{
+      outline(title: [Inhaltsverzeichnis], indent: auto)
+    } else {
+        outline(title: [Table of Contents], indent: auto)
+    }
   }
 
   // Display the article's contents.
@@ -303,4 +306,19 @@
       outset: 5pt, 
       radius: 7pt, 
       width: 75%))
+}
+
+// Fancy Representation for LaTeX and Typst
+#let fancy-typst  = {
+  text(font: "Linux Libertine", weight: "semibold", fill: eastern)[typst]
+}
+#let fancy-latex = {
+    set text(font: "New Computer Modern")
+    box(width: 2.55em, {
+      [L]
+      place(top, dx: 0.3em, text(size: 0.7em)[A])
+      place(top, dx: 0.7em)[T]
+      place(top, dx: 1.26em, dy: 0.22em)[E]
+      place(top, dx: 1.8em)[X]
+    })
 }
