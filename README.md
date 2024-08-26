@@ -4,7 +4,7 @@
 This is a template, modeled after the LaTeX template provided by the Vienna University of Technology for Engineering Students. It is intended to be used as a starting point for writing Bachelor's or Master's theses, but can be adapted for other purposes as well. It shall be noted that this template is not an official template provided by the Vienna University of Technology, but rather a personal effort to provide a similar template in a new typesetting system. If you want to checkout the original templates visit the website of [TU Wien](https://www.tuwien.at/cee/edvlabor/lehre/vorlagen) 
 
 
-<img src="thumbnail-long.png" alt="isolated" height="400px"/>
+<img src="thumbnail.png" alt="isolated" height="400px"/>
 
 
 ## Getting Started
