@@ -1,4 +1,4 @@
-#import "@preview/vienna-tech:0.1.1": *
+#import "@preview/vienna-tech:0.1.2": *
 
 #show "Typst": fancy-typst
 #show "LaTeX": fancy-latex
@@ -18,9 +18,9 @@
   ),
   abstract: include "abstract.typ",
   toc:true,
-  bibliography: bibliography("assets/refs.bib"), 
-  appendix: include "appendix.typ", 
-    )
+  bibliography: bibliography("assets/refs.bib", full: true), 
+  appendix: include "appendix.typ",
+)
 
 // Some Example Content has already been created for you, to show you how to use the configuration
 // and to give you some useful information about the structure of a Bachelor Thesis
