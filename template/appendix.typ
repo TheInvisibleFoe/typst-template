@@ -1,5 +1,3 @@
-#import "@preview/vienna-tech:0.1.1": *
-
 Ein möglicher Anhang sollte direkt nach dem Literaturverzeichnis ohne 
 Seitenumbruch angeführt werden.
 Jede Anhangüberschrift wird wie eine normale Überschrift eingeleitet, jedoch gibt es keine Nummerierung.
