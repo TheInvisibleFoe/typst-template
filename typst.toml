@@ -2,7 +2,7 @@
 
 [package]
 name = "vienna-tech"
-version = "0.1.2"
+version = "0.1.3"
 entrypoint = "src/lib.typ"
 authors = ["Niko Pikall"]
 license = "Unlicense"

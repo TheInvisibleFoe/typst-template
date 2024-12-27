@@ -1,3 +1,6 @@
+# [v0.1.3](https://github.com/npikall/vienna-tech/releases/tag/v0.1.3)
+- Fixed a bug that caused the appendix label not to change when a different language was selected.
+
 # [v0.1.2](https://github.com/npikall/vienna-tech/releases/tag/v0.1.2)
 - Added layout customization options (font-sizes, title-page, etc.)
 - Added functionality to set fonts for the document.
