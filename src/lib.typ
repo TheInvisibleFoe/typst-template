@@ -308,12 +308,13 @@
   let show-appendix = {
     if appendix != none {
       set heading(numbering: none)
-      [= Anhang]
+      [= #if lang == "de" { "Anhang" } else { "Appendix" }]
       set outline(depth: 2)
       set heading(numbering: (..nums) => {
         nums = nums.pos()
+        let prefix = if lang == "de" { "Anhang " } else { "Appendix " }
         if nums.len() == 1 {
-          return "Anhang " + numbering("A.", ..nums)
+          return prefix + numbering("A.", ..nums)
         } else if nums.len() == 2 {
           return numbering("A.1.", ..nums)
         } else {
