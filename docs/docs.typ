@@ -9,11 +9,11 @@
 #show heading.where(level: 1): it => align(center, it)
 
 = Vienna-Tech - Template Documentation
-#align(center, heading(level: 2, [v.0.2.0]))
+#align(center, heading(level: 2, [v.1.0.0]))
 #v(1cm)
 == Example Usage
 ```typ
-#import "@preview/vienna-tech:0.2.0": *
+#import "@preview/vienna-tech:1.0.0": *
 
 // Useing the configuration
 #show: tuw-thesis.with(

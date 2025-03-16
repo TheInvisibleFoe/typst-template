@@ -1,4 +1,4 @@
-#import "@preview/vienna-tech:0.2.0": *
+#import "@preview/vienna-tech:1.0.0": *
 
 #show "Typst": fancy-typst
 #show "LaTeX": fancy-latex
