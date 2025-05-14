@@ -84,7 +84,7 @@
   font:title-font,
   /// The title which the abstract paragraph should have.
   /// -> content | string 
-  title:[Kurzfassung]
+  title:[Abstract]
 ) = {
     // English abstract
     v(50pt, weak: true)

@@ -27,7 +27,7 @@
   papersize: "a4",
   /// The language of the document.
   /// -> string
-  lang: "de",
+  lang: "en",
   /// The standard fontsize. All other fontsizes are in calculated from this value.
   /// -> length
   font-size: 11pt,
@@ -42,7 +42,7 @@
   raw-font: ("DejaVu Sans Mono"),
   /// The margins of the paper
   /// -> dictionary | lenght
-  paper-margins: (left: 2.5cm, right: 2.5cm, top: 2.5cm, bottom: 2.5cm),
+  paper-margins: (left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm),
   fig-caption-width: 80%,
   /// 
   title-hypenation: auto,
@@ -98,7 +98,7 @@
   set math.equation(numbering: chapterwise-numbering) if eq-chapterwise
   
   // Configure citations and bibliography style
-  set std-bibliography(style: "ieee", title: [Literatur])
+  set std-bibliography(style: "ieee", title: [References])
 
   // Referencing Figures
   show figure.where(kind: table): set figure(supplement: [Tab.], numbering: "1") if lang == "de"
@@ -152,7 +152,7 @@
   numbering:"A.1",
   /// The title of the Appendix
   /// -> none | str | content
-  title: none,
+  title: "Appendix",
   /// The alignment of the title
   /// -> alignment
   title-align: center,
@@ -182,9 +182,13 @@
     show heading.where(level:1, numbering:none): it => {
       if title-size != none {
         set text(size: title-size)
-        it
+        v(1fr)
+        it 
+        line(length:100%)
       } else {
+        v(1fr)
         it
+        line(length:100%)
       }
     }
     let title-text = heading(numbering: none, level: 1, outlined: title-ouline, title)

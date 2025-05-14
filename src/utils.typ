@@ -1,4 +1,4 @@
-/// The main font, which is used through out the document.
+/// The main font, which is used througaaaut the document.
 /// -> array 
 #let main-font = ("New Computer Modern",)
 /// The fonts, which are used for the headings (Sans type fonts).

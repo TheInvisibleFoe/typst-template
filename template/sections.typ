@@ -1,6 +1,30 @@
 #import "@preview/codly:1.2.0": *
 #show: codly-init.with()
-
+#show link: set text(navy)
+#show link: this => {
+  let show-type = "box" // "box" or "filled", see below
+  let label-color = olive
+  let default-color = eastern
+  
+  if show-type == "box" {
+    if type(this.dest) == label {
+      // Make the box bound the entire text:
+      set text(bottom-edge: "bounds", top-edge: "bounds")
+      box(this, stroke: label-color + 1pt)
+    } else {
+      set text(bottom-edge: "bounds", top-edge: "bounds")
+      box(this, stroke: default-color + 1pt)
+    }
+  } else if show-type == "filled" {
+    if type(this.dest) == label {
+      text(this, fill: label-color)
+    } else {
+      text(this, fill: default-color)
+    }
+  } else {
+    this
+  }
+}
 #codly(languages: (python: (name: "Python", color: rgb("#006699"))))
 
 = Bachelorarbeit
