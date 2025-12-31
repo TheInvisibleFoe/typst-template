@@ -36,7 +36,7 @@
   main-font: "New Computer Modern",
   /// The font of the headings (of Sans Type)
   /// -> string | array
-  title-font: ("New Computer Modern Sans", "PT Sans", "DejaVu Sans"),
+  title-font: ("CMU Sans Serif", "PT Sans", "DejaVu Sans"),
   /// The font of the raw text or codeblocks.
   /// -> string | array
   raw-font: "DejaVu Sans Mono",

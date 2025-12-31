@@ -3,7 +3,7 @@
 #let main-font = ("New Computer Modern",)
 /// The fonts, which are used for the headings (Sans type fonts).
 /// -> array
-#let title-font = ("New Computer Modern Sans", "PT Sans", "DejaVu Sans")
+#let title-font = ("CMU Sans Serif", "PT Sans", "DejaVu Sans")
 /// The font used for all raw and code text elements
 /// -> array
 #let raw-font = ("DejaVu Sans Mono",)

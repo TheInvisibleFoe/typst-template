@@ -118,7 +118,7 @@
 
 
 // Basic Symbols
-#let ot = sym.times.circle
+#let ot = sym.times.o
 #let xx = $bold(x)$
 #let pm = sym.plus.minus
 #let mp = sym.minus.plus

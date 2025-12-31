@@ -2,11 +2,13 @@
 // Typst does not support global variables, so for now we import
 // everything we need into an import file and import it here and
 // for all subfiles.
+
 // Some Macros are also defined in the import file.
 #import "imports.typ": *
 
 #show: codly-init.with()
 #codly(languages: (python: (name: "Python", color: rgb("#006699"))))
+
 // No idea what this does, but it seems fancy.
 #show "Typst": fancy-typst
 #show "LaTeX": fancy-latex
@@ -20,7 +22,7 @@
   lang: "en",
 )
 #maketitle(
-  title: "A Critical Study on Batman",
+  title: "An Unserious Study on Batman",
   thesis-type: [Thesis],
   authors: (
     (
@@ -42,9 +44,12 @@
 
 
 = Introduction
-If you have started reading this document, I have successfully lured you in to reading about batman. Spoiler Alert: Batman is awesome, and he cannot be studied because he is AWESOME. Anyways, there are just some sample examples of different usages of some stuff here.
+If you have started reading this document, I have successfully lured you in to read about batman. Spoiler Alert: Batman is awesome, and he cannot be studied because he is AWESOME. Anyways, there are just some sample examples of different usages of some stuff here.
 
 = Math
+
+To generate the theorem environments below, we use the `ctheorems` package. Here is an sample definition and theorem. One can go through the excellent documentation of the package which has the #link("https://raw.githubusercontent.com/typst/packages/main/packages/preview/ctheorems/1.1.3/assets/manual.pdf", "Manual").
+
 #definition("Kolmogorov Smirnov Test")[
 
   The one sample Kolmogorov Smirnov test is defined as follows:
@@ -214,9 +219,23 @@ plit("Y`x5e");for(!t~i=1;i<a.length;a[0]+=a[i+1],i+=2){a[0]+="Y".repeat(Integer.
 ####################################################################################  Quine Relay -- Copyright (c) 2013, 2014 Yusuke Endoh (@mametter), @hirekoke  ###################################################################################)
 
 ```
+#show raw: set text(size:3em)
 
-= Conclusion
-This is the conclusion. Batman is still awesome. Anways, here is a joke.
+Not that the source code of the ourobourous quine is not displayed following the code highlighting set by codly. This is has been done  by `#codly-disable()`
+
+= Imports
+The packages imported for this template are:
++ `ctheorems` for theorem environments.
++ `codly` for code highlighting.
++ `codly-languages` for more language support in codly.
++ `subpar` for creating subfigures easily in typst.
++ `i-figured` for section wise figure numbering.
++ `physica` for physics related symbols and notation.
+
+Proper usage can be found very easily in the typst universe documentations provided by the respective package authors.
+
+= Conclusion <conc>
+This is the conclusion as evidenced by @conc. Batman is still awesome. Anways, here is a joke.
 #quote(attribution: "Alan Moore")[
   #set par(
     first-line-indent: 0em
@@ -241,6 +260,8 @@ This is the conclusion. Batman is still awesome. Anways, here is a joke.
   #v(0.5em)
   'What do you think I am? Crazy? You'd turn it off when I was half way across!
 ]
-//#show: appendix
+#pagebreak()
+#show: appendix
 #include "appendix.typ"
+#pagebreak()
 #bibliography("refs.bib")
